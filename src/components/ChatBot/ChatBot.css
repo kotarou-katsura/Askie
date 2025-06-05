@@ -46,4 +46,10 @@
   background-color: rgb(107, 44, 194);
 }
 
-
+.btn-send{
+  background-color: rgb(169, 139, 233);
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: inherit;
+  border: 3px solid white;
+}

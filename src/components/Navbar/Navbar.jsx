@@ -1,21 +1,55 @@
 import React, { useReducer } from "react";
-import { useState, useRef, useEffect,forwardRef } from "react";
+import { useState, useRef, useEffect, forwardRef } from "react";
+import { motion } from "framer-motion";
 import "./Navbar.css";
-import logo from "../../assets/logo.png"
-const Navbar =forwardRef( (props) => {
+import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
+// const Navbar = forwardRef((props) => {
+  
+const Navbar = () => {
   return (
     <nav className="con-nav">
       <ul className="con-nav-item">
-        <li><img className="logo" src={logo}></img></li>
-        <li>Home</li>
-        <li>About us</li>
-        <li>
-          <button className="btn">Contact us</button>
-        </li>
+        <>
+          <img className="logo" src={logo}></img>
+        </>
+        <Link to="/home">
+          <motion.button
+            className="btn-transparent"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
+            Home
+          </motion.button>
+        </Link>
+        <Link to="/about">
+          <motion.button
+            className="btn-transparent"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
+            About us
+          </motion.button>
+        </Link>
+        <Link to="/contact">
+          <motion.button
+            className="btn"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onHoverStart={() => console.log("hover started!")}
+          >
+            contact us
+          </motion.button>
+        </Link>
       </ul>
     </nav>
   );
-});
+// });
+}
 
 export default Navbar;
+
+
 

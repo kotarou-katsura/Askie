@@ -2,6 +2,8 @@ import React from "react";
 import { GoogleGenAI } from "@google/genai";
 import  { useEffect, useState } from "react";
 import "./ChatBot.css"
+import { motion } from "framer-motion";
+
 
 const ChatBot = () => {
   const [aiQuestion, setAiQuestion] = useState(""); 
@@ -52,7 +54,14 @@ const ChatBot = () => {
         //   cols={100%}
         //   rows={100%}
         ></textarea>
-        <button className="sendMassege" onClick={sendQ}>send</button>
+        <motion.button
+                    className="btn-send" onClick={sendQ}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onHoverStart={() => console.log("hover started!")}
+                  >
+                   send
+                  </motion.button>
       </div>
       <div className="con-chatBot-answer">
         <p>{aiResponse || "Loading..."}</p>
