@@ -9,15 +9,13 @@ import Contact from "./components/Pages/Contact/Contact.jsx";
 const App = () => {
   return (
     <div className="con-all">
-      <p>hellow</p>
      <Navbar/>
       <Routes>
         <Route path="/home" exact element={<Home />}></Route> 
         <Route path="/about" exact element={<About/>}></Route>
         <Route path="/contact" exact element={<Contact/>}></Route>
-
       </Routes>
-     
+     <Footer></Footer>
     </div>
   );
 };
