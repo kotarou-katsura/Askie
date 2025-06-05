@@ -1,0 +1,22 @@
+body{
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.con-all{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

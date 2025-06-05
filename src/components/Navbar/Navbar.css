@@ -1,0 +1,46 @@
+.con-nav{
+  /* display: flex;
+    align-items: center;
+  justify-content: center; */
+  width: 1000px;
+  position: absolute;
+  top: 0px;
+
+}
+.logo{
+  width: 100px;
+}
+
+.con-nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+li{
+    list-style: none;
+}
+.btn{
+  background-color: rgb(169, 139, 233);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: inherit;
+  border: 5px solid transparent;
+
+  /* transition: border 0.3s ease; */
+
+}
+
+  /* transition: border 0.3s ease; */
+
+
+.btn:hover {
+
+  animation: border-blink 0.8s infinite;
+}
+
+@keyframes border-blink {
+  0%   { border-color: rgb(150, 106, 150); }
+  50%  { border-color: transparent; }
+  100% { border-color: rgb(77, 118, 114); }
+}
