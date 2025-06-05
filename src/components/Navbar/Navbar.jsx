@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-// const Navbar = forwardRef((props) => {
+
   
 const Navbar = () => {
   return (
@@ -46,7 +46,6 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-// });
 }
 
 export default Navbar;

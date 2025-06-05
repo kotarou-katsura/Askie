@@ -10,14 +10,14 @@ const App = () => {
   return (
     <div className="con-all">
       <p>hellow</p>
-     <Navbar>
+     <Navbar/>
       <Routes>
         <Route path="/home" exact element={<Home />}></Route> 
         <Route path="/about" exact element={<About/>}></Route>
         <Route path="/contact" exact element={<Contact/>}></Route>
 
       </Routes>
-     </Navbar>
+     
     </div>
   );
 };
