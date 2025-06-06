@@ -18,7 +18,6 @@ const Navbar = () => {
             className="btn-transparent"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            onHoverStart={() => console.log("hover started!")}
           >
             Home
           </motion.button>
@@ -28,7 +27,6 @@ const Navbar = () => {
             className="btn-transparent"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            onHoverStart={() => console.log("hover started!")}
           >
             About us
           </motion.button>
@@ -38,7 +36,6 @@ const Navbar = () => {
             className="btn"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            onHoverStart={() => console.log("hover started!")}
           >
             contact us
           </motion.button>

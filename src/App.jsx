@@ -18,7 +18,6 @@ const App = () => {
   return (
     <div className="con-all">
       <Navbar />
-
       <Routes>
         <Route path="/" exact element={<Home/>}></Route>
         <Route path="/about" exact element={<About />}></Route>

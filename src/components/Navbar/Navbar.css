@@ -1,8 +1,5 @@
 .con-nav {
-  /* display: flex;
-    align-items: center;
-  justify-content: center; */
-  width: 1000px;
+  width: 800px;
   position: absolute;
   top: 0px;
 }
@@ -25,8 +22,6 @@ li {
   padding: 5px 15px;
   font-size: inherit;
   border: 5px solid transparent;
-
-  /* transition: border 0.3s ease; */
 }
 
 .btn-transparent{
@@ -34,4 +29,5 @@ li {
   color: white;
   font-size: initial;
   border: none;
+  font-size: inherit;
 }
