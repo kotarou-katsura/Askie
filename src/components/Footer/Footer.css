@@ -1,0 +1,17 @@
+.footer-icon{
+    width: 50px;
+}
+.con-footer{
+    position: absolute;
+    bottom: 0px;
+    width: 80%;
+    display: flex;
+    /* gap: 60px; */
+    justify-content: space-between;
+    align-items: center;
+}
+.con-icon{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

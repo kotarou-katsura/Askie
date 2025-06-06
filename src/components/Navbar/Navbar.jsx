@@ -13,7 +13,7 @@ const Navbar = () => {
         <>
           <img className="logo" src={logo}></img>
         </>
-        <Link to="/home">
+        <Link to="/">
           <motion.button
             className="btn-transparent"
             whileHover={{ scale: 1.1 }}
