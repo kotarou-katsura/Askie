@@ -1,12 +1,18 @@
-# React + Vite
+# 🤖 Askie Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Askie is a lightweight web-based chatbot that allows users to send messages and receive intelligent responses, powered by **Gemini 1.5 Flash** — for free.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 💬 Simple message-based interaction
+- ⚡ Powered by Gemini 1.5 Flash (via Google AI Studio or Gemini API)
+- 🌐 Fully client-side (no backend required)
+- 🆓 Completely free to use
+- 🎨 Minimal, responsive UI
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> _Askie answering your questions in real-time._
+
+![Askie Screenshot](./screenshot.png)
+
