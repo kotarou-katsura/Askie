@@ -9,6 +9,7 @@ const ChatBot = () => {
   const [aiResponse, setAiResponse] = useState("");
 
   const sendQ = function () {
+    setAiResponse("Loading..."); // Show loading immediately on button click
     const ai = new GoogleGenAI({
       apiKey: import.meta.env.VITE_APP_GEMINI_API_KEY,
     });
@@ -31,10 +32,10 @@ const ChatBot = () => {
           model: "gemini-1.5-flash",
           contents: aiQuestion,
         });
-        console.log(formatText(response.text));
         setAiResponse(formatText(response.text));
       } catch (error) {
         console.error("Error generating content:", error);
+        setAiResponse("Error generating content");
       }
     }
 
@@ -60,7 +61,7 @@ const ChatBot = () => {
         </motion.button>
       </div>
       <div className="con-chatBot-answer">
-        <p>{aiResponse || "Loading..."}</p>
+        {aiResponse && <p>{aiResponse}</p>}
       </div>
     </div>
   );
