@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@cmnd-ai/chatbot-react": "^1.5.0",
