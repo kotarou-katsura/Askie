@@ -13,7 +13,7 @@ const Navbar = () => {
         <>
           <img className="logo" src={logo}></img>
         </>
-        <Link to="/">
+        <Link to="/Askie">
           <motion.button
             className="btn-transparent"
             whileHover={{ scale: 1.1 }}
@@ -22,7 +22,7 @@ const Navbar = () => {
             Home
           </motion.button>
         </Link>
-        <Link to="/about">
+        <Link to="/Askie/about">
           <motion.button
             className="btn-transparent"
             whileHover={{ scale: 1.1 }}
@@ -31,7 +31,7 @@ const Navbar = () => {
             About me
           </motion.button>
         </Link>
-        <Link to="/contact">
+        <Link to="/Askie/contact">
           <motion.button
             className="btn"
             whileHover={{ scale: 1.1 }}

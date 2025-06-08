@@ -19,9 +19,9 @@ const App = () => {
     <div className="con-all">
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Home/>}></Route>
-        <Route path="/about" exact element={<About />}></Route>
-        <Route path="/contact" exact element={<Contact />}></Route>
+        <Route path="/Askie" exact element={<Home/>}></Route>
+        <Route path="/Askie/about" exact element={<About />}></Route>
+        <Route path="/Askie/contact" exact element={<Contact />}></Route>
       </Routes>
       <Footer ></Footer>
     </div>
