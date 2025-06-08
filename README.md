@@ -14,5 +14,6 @@ Askie is a lightweight web-based chatbot that allows users to send messages and 
 
 > _Askie answering your questions in real-time._
 
-![Askie Screenshot](./src/asset/screenshot.png)
+![Askie Screenshot](./src/assets/screenshot.png)
+
 
