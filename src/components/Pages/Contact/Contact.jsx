@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="center ">
+    <div >
       <div className="contact width-space">
         <div className="contact-items">
           <h2>

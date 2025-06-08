@@ -1,33 +1,29 @@
 import React from "react";
 import { GoogleGenAI } from "@google/genai";
-import  { useEffect, useState } from "react";
-import "./ChatBot.css"
+import { useEffect, useState } from "react";
+import "./ChatBot.css";
 import { motion } from "framer-motion";
 
-
 const ChatBot = () => {
-  const [aiQuestion, setAiQuestion] = useState(""); 
-  const [aiResponse, setAiResponse] = useState(""); 
+  const [aiQuestion, setAiQuestion] = useState("");
+  const [aiResponse, setAiResponse] = useState("");
 
-   const sendQ=function (){
+  const sendQ = function () {
     const ai = new GoogleGenAI({
       apiKey: import.meta.env.VITE_APP_GEMINI_API_KEY,
     });
 
-    const formatText= function (text) {
-  return text
-    .split('*')
-    .map(item => item.trim())
-    .filter(item => item.length > 0)
-    .map(item => {
-      return item.replace(/\*\*(.*?)\*\*/g, '>> $1 <<');
-    })
-    .map(item => '' + item)
-    .join('\n');
-}
-
-
-
+    const formatText = function (text) {
+      return text
+        .split("*")
+        .map((item) => item.trim())
+        .filter((item) => item.length > 0)
+        .map((item) => {
+          return item.replace(/\*\*(.*?)\*\*/g, ">> $1 <<");
+        })
+        .map((item) => "" + item)
+        .join("\n");
+    };
 
     async function main() {
       try {
@@ -45,23 +41,23 @@ const ChatBot = () => {
     main();
   };
 
-
   return (
     <div className="con-chatBox">
       <div className="con-question">
-        <textarea className="question-box " onChange={e=>setAiQuestion(e.target.value)}
+        <textarea
+          className="question-box "
+          onChange={(e) => setAiQuestion(e.target.value)}
           placeholder="ask your question!"
-        //   cols={100%}
-        //   rows={100%}
         ></textarea>
         <motion.button
-                    className="btn-send" onClick={sendQ}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onHoverStart={() => console.log("hover started!")}
-                  >
-                   send
-                  </motion.button>
+          className="btn-send"
+          onClick={sendQ}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onHoverStart={() => console.log("hover started!")}
+        >
+          send
+        </motion.button>
       </div>
       <div className="con-chatBot-answer">
         <p>{aiResponse || "Loading..."}</p>

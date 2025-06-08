@@ -4,7 +4,7 @@
   border-radius: 10px;
   margin-top: 10px;
   font-size: inherit;
-  /* height: 900px; */
+  height: 900px;
 }
 
 .con-chatBot-answer > p {
@@ -36,21 +36,12 @@
   outline: none;
 }
 
-.sendMassege {
-  border-radius: 10px;
-  background-color: rgb(169, 139, 233);
-  padding: 10px 25px;
-  font-size: inherit;
-  border: solid white;
-}
-.sendMassege:active {
-  background-color: rgb(107, 44, 194);
-}
 
 .btn-send{
-  background-color: rgb(169, 139, 233);
+  background-color: rgb(79, 0, 249);
   border-radius: 10px;
   padding: 5px 15px;
   font-size: inherit;
-  border: 3px solid white;
+  border: none;
+  color: white;
 }
