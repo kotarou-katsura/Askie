@@ -28,7 +28,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            About us
+            About me
           </motion.button>
         </Link>
         <Link to="/contact">
@@ -37,7 +37,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            contact us
+            contact me
           </motion.button>
         </Link>
       </ul>
