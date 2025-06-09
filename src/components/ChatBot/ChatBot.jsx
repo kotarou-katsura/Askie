@@ -35,7 +35,7 @@ const ChatBot = () => {
         setAiResponse(formatText(response.text));
       } catch (error) {
         console.error("Error generating content:", error);
-        setAiResponse("Error generating content");
+        setAiResponse("Error generating content. if you are from iran, change your IP!");
       }
     }
 

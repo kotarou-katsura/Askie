@@ -7,7 +7,7 @@ import "./Footer.css"
 
 const Footer = () => {
   return (
-    <div className="con-footer footer">
+    <div className="con-footer ">
         <p>© 2025 katsura</p>
       <ol className="con-icon">
         

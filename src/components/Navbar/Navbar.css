@@ -1,7 +1,5 @@
 .con-nav {
   width: 800px;
-  /* position: absolute; */
-  /* top: 0px; */
   margin: 0 auto;
 }
 .logo {
@@ -31,4 +29,21 @@ li {
   font-size: initial;
   border: none;
   font-size: inherit;
+}
+nav .menu{
+  display: none;
+ position: absolute;
+ top: 0.75rem;
+ right: 0rem;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 2.25rem;
+ height: 2rem;
+
+}
+nav .menu span{
+  height:0.4rem ;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.2rem;
 }

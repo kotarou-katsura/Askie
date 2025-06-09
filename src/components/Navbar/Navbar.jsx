@@ -5,14 +5,18 @@ import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
-  
 const Navbar = () => {
   return (
     <nav className="con-nav">
+      <>
+        <img className="logo" src={logo}></img>
+      </>
+      <div className="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul className="con-nav-item">
-        <>
-          <img className="logo" src={logo}></img>
-        </>
         <Link to="/Askie">
           <motion.button
             className="btn-transparent"
@@ -43,9 +47,6 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
-
-
-

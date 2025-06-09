@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <div >
-      <div className="contact width-space">
+      <div className="contact">
         <div className="contact-items">
           <h2>
             Sends me a message!

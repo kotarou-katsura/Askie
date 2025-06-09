@@ -2,19 +2,13 @@
   width: 30px;
 }
 .con-footer {
-
+  color: rgb(156, 156, 156);
   width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
-/* .footer {
-    position: absolute;
-  bottom: 0;
-  
-
-} */
 
 .con-icon {
   display: flex;

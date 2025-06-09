@@ -1,3 +1,10 @@
+.con-chatBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+}
 .con-chatBot-answer {
   width: 100%;
   background-color: blueviolet;
@@ -15,13 +22,7 @@
   width: 100%;
   font-size: inherit;
 }
-.con-chatBox {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 700px;
-}
+
 .question-box {
   margin-right: 5px;
   resize: none;
