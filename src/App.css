@@ -35,8 +35,17 @@ body {
   }
   .con-nav-item {
     flex-direction: column;
-    display: none;
+    /* display: none; */
+    gap: 10px;
   }
+  .btn-nav{
+    background-color: transparent !important;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
    .icon_img{
         width: 80% !important;
     margin-right: 10%;
@@ -62,4 +71,8 @@ body {
     margin-top: 10%;
     margin-bottom: 10%;
   }
+  .logo{
+    width: 70px;
+  }
+  
 }

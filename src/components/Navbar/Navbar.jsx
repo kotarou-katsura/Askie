@@ -6,17 +6,19 @@ import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   return (
     <nav className="con-nav">
       <>
         <img className="logo" src={logo}></img>
       </>
-      <div className="menu">
+      <div onClick={() => setMenuIsOpen(!menuIsOpen)} className="menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <ul className="con-nav-item">
+      <ul className={`con-nav-item ${menuIsOpen ? "openMenu" : "closeMenu"}`}>
         <Link to="/Askie">
           <motion.button
             className="btn-transparent"
@@ -37,11 +39,11 @@ const Navbar = () => {
         </Link>
         <Link to="/Askie/contact">
           <motion.button
-            className="btn"
+            className="btn btn-nav"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            contact me
+            Contact me
           </motion.button>
         </Link>
       </ul>
