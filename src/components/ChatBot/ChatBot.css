@@ -14,7 +14,7 @@
 }
 
 .con-chatBot-answer > p {
-  line-height: 1.5; 
+  line-height: 1.5;
   margin: 15px;
 }
 .con-question {
@@ -24,20 +24,20 @@
 }
 
 .question-box {
-  margin-right: 5px;
-  resize: none;
-  border: none;
-  background-color: transparent;
-  color: white;
+   margin-right: 5px;
   width: 100%;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
   font-size: inherit;
 }
 .question-box:focus {
   outline: none;
 }
 
-
-.btn-send{
+.btn-send {
   background-color: rgb(79, 0, 249);
   border-radius: 10px;
   padding: 5px 15px;
