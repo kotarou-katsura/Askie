@@ -49,9 +49,3 @@ nav .menu span{
   background-color: white;
   border-radius: 0.2rem;
 }
-.openMenu{
-display: flex;
-}
-.closeMenu{
-display: none;
-}

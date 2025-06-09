@@ -54,6 +54,9 @@ body {
 }
 
 @media (max-width: 840px) {
+  .con-nav-item{
+    display: flex;
+  }
   .con-nav,
   .con-footer,
   .con-chatBox,

@@ -7,7 +7,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-
+  const [isWide, setIsWide] = useState(window.innerWidth > 480);
+  useEffect(() => {
+    function handleResize() {
+      setIsWide(window.innerWidth > 480);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <nav className="con-nav">
       <>
@@ -18,7 +25,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-      <ul className={`con-nav-item ${menuIsOpen ? "openMenu" : "closeMenu"}`}>
+      <ul className="con-nav-item " style={isWide||menuIsOpen? {display:"flex"}:{display:"none"}}>
         <Link to="/Askie">
           <motion.button
             className="btn-transparent"
